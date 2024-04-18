@@ -8,7 +8,7 @@ export class Helpers {
    * @returns
    */
   public static isPushOp(opcode: EvmOpcode): boolean {
-    return opcode.mnemonic.includes('PUSH');
+    return opcode.mnemonic.startsWith('PUSH');
   }
 
   /**
